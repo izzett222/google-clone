@@ -11,6 +11,10 @@ module.exports = {
       },
       boxShadow: {
         "input-shadow": "0 1px 6px rgb(32 33 36 / 28%)"
+      },
+      colors: {
+        "menu-link": "rgba(0,0,0,.87)",
+        "active-menu-link": "#4285f4"
       }
     },
   },

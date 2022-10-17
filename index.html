@@ -15,23 +15,32 @@
 </head>
 
 <body class="font-lato flex flex-col min-h-full h-full">
-    <header class="flex justify-end items-center h-12 p-2">
-        <a href="#" class="text-[13px] text-[rgba(0,0,0,.87)] hover:underline">Gmail</a>
-        <a href="#" class="text-[13px] text-[rgba(0,0,0,.87)] hover:underline pl-[15px] pr-2">Images</a>
-        <div class="mx-1"><button class="p-2 rounded-full hover:bg-hover"><img src="./assets/menu.svg"
-                    alt="menu icon"></button></div>
-        <div class="p-1"><img src="./assets/avatar.jpg" class="h-10 w-10 rounded-full p-1 hover:bg-hover" alt="avatar">
+    <header class="flex justify-between md:justify-end items-center h-12 p-2">
+        <div class="pl-2 md:hidden flex items-center">
+            <div class="px-4 py-3"><div class="relative border-y-[3px] h-[14px] w-5 border-[#70757a]  after:absolute after:border-[#70757a] after:border-solid after:border-b-[3px] after:top-[3px] after:left-0 after:w-5"></div></div>
+            <a href="#" class="text-[13px] text-active-menu-link border-active-menu-link hover:underline border-b-2 border-solid py-3 font-bold">ALL</a>
+            <a href="#" class="text-[13px] text-menu-link hover:underline pl-[15px] pr-2">Images</a>
         </div>
+        <div class="flex items-center">
+            <a href="#" class="hidden md:block text-[13px] text-menu-link hover:underline">Gmail</a>
+            <a href="#" class="hidden md:block text-[13px] text-menu-link hover:underline pl-[15px] pr-2">Images</a>
+            <div class="mx-1"><button class="p-2 rounded-full hover:bg-hover"><img src="./assets/menu.svg"
+                        alt="menu icon"></button></div>
+            <div class="p-1"><img src="./assets/avatar.jpg" class="h-10 w-10 rounded-full p-1 hover:bg-hover"
+                    alt="avatar">
+            </div>
+        </div>
+
     </header>
     <main class="flex-1">
-        <div class="flex justify-center">
-            <img src="./assets/logo.png" class=" h-[92px] w-[272px]" alt="logo">
+        <div class="flex justify-center mt-9 mb-4 md:my-0">
+            <img src="./assets/logo.png" class="w-40 h-14 md:h-[92px] md:w-[272px]" alt="logo">
         </div>
         <form class="p-5">
 
             <div class=" relative max-w-[582px] mx-auto">
                 <input type="text"
-                    class="rounded-3xl border-[#dfe1e5] border-[1px] border-solid h-11 w-full min-w-[260px] hover:shadow-input-shadow pt-[6px]">
+                    class="rounded-3xl pl-12 border-[#dfe1e5] border-[1px] border-solid h-11 w-full hover:shadow-input-shadow pt-[6px] outline-none">
                 <img src="./assets/search.svg" class="absolute left-0 pl-4 top-[11px]" alt="search">
                 <img src="./assets/microphone.svg" class="absolute right-0 pr-4 top-[10px]" alt="microphone">
             </div>
@@ -44,8 +53,9 @@
                     Feeling Lucky</button>
             </div>
         </form>
-        <p class="text-[#4d5156] text-sm mx-auto w-fit">Google offered in: <a class="text-[#1a0dab] px-[3px] hover:underline"
-                href="#">Français</a> <a class="text-[#1a0dab] px-[3px] hover:underline" href="#">Kiswahili</a> <a
+        <p class="text-[#4d5156] text-sm mx-auto w-fit px-5">Google offered in: <a
+                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Français</a> <a
+                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Kiswahili</a> <a
                 class="text-[#1a0dab] px-[3px] hover:underline" href="#">Ikinyarwanda</a></p>
     </main>
     <footer class="bg-[#f2f2f2]">
@@ -53,19 +63,25 @@
             <p class="text-[15px] text-[#70757a]">Rwanda</p>
         </div>
         <div class="flex justify-evenly xl:justify-between flex-wrap px-5">
+            <div class="flex md:hidden">
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Dark theme: off</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
+            </div>
+            <div class="hidden md:flex">
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">About</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Advertising</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Business</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">How Search works</a>
+            </div>
             <div class="flex">
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline" >About</a>
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Advertising</a>
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Business</a>
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline"> How Search works </a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
+                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
+            </div>
         </div>
-        <div class="flex">
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
-            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
-        </div>
-        </div>
-        
+
     </footer>
 </body>
 
