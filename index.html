@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-full h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">nk
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
-<body>
-    <header class="font-bold">hello world</header>
+
+<body class="font-lato flex flex-col min-h-full h-full">
+    <header class="flex justify-end items-center h-12 p-2">
+        <a href="#" class="text-[13px] text-[rgba(0,0,0,.87)] hover:underline">Gmail</a>
+        <a href="#" class="text-[13px] text-[rgba(0,0,0,.87)] hover:underline pl-[15px] pr-2">Images</a>
+        <div class="mx-1"><button class="p-2 rounded-full hover:bg-hover"><img src="./assets/menu.svg"
+                    alt="menu icon"></button></div>
+        <div class="p-1"><img src="./assets/avatar.jpg" class="h-10 w-10 rounded-full p-1 hover:bg-hover" alt="avatar">
+        </div>
+    </header>
+    <main class="flex-1">
+        <div class="flex justify-center">
+            <img src="./assets/logo.png" class=" h-[92px] w-[272px]" alt="logo">
+        </div>
+        <form class="p-5">
+
+            <div class=" relative max-w-[582px] mx-auto">
+                <input type="text"
+                    class="rounded-3xl border-[#dfe1e5] border-[1px] border-solid h-11 w-full min-w-[260px] hover:shadow-input-shadow pt-[6px]">
+                <img src="./assets/search.svg" class="absolute left-0 pl-4 top-[11px]" alt="search">
+                <img src="./assets/microphone.svg" class="absolute right-0 pr-4 top-[10px]" alt="microphone">
+            </div>
+            <div class="flex pt-[18px] mx-auto w-fit">
+                <button
+                    class="bg-[#f8f9fa] my-[11px] mx-1 px-4 h-9 text-sm rounded-[4px] border-solid border-[1px] border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-sm text-[#202124]">Google
+                    Search</button>
+                <button
+                    class="bg-[#f8f9fa] my-[11px] mx-1 px-4 h-9 text-sm rounded-[4px] border-solid border-[1px] border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-sm text-[#202124]">I'm
+                    Feeling Lucky</button>
+            </div>
+        </form>
+        <p class="text-[#4d5156] text-sm mx-auto w-fit">Google offered in: <a class="text-[#1a0dab] px-[3px] hover:underline"
+                href="#">Français</a> <a class="text-[#1a0dab] px-[3px] hover:underline" href="#">Kiswahili</a> <a
+                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Ikinyarwanda</a></p>
+    </main>
+    <footer class="bg-[#f2f2f2]">
+        <div class="py-[15px] px-[30px] border-b-[1px] border-solid border-[#dadce0]">
+            <p class="text-[15px] text-[#70757a]">Rwanda</p>
+        </div>
+        <div class="flex justify-evenly xl:justify-between flex-wrap px-5">
+            <div class="flex">
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline" >About</a>
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Advertising</a>
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Business</a>
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline"> How Search works </a>
+        </div>
+        <div class="flex">
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
+            <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
+        </div>
+        </div>
+        
+    </footer>
 </body>
+
 </html>
