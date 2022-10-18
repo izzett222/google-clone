@@ -5,25 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 
-<body class="font-lato flex flex-col min-h-full h-full">
+<body class="font-arial flex flex-col min-h-full h-full">
     <header class="flex justify-between md:justify-end items-center h-12 p-2">
         <div class="pl-2 md:hidden flex items-center">
-            <div class="px-4 py-3"><div class="relative border-y-[3px] h-[14px] w-5 border-[#70757a]  after:absolute after:border-[#70757a] after:border-solid after:border-b-[3px] after:top-[3px] after:left-0 after:w-5"></div></div>
-            <a href="#" class="text-[13px] text-active-menu-link border-active-menu-link hover:underline border-b-2 border-solid py-3 font-bold">ALL</a>
-            <a href="#" class="text-[13px] text-menu-link hover:underline pl-[15px] pr-2">Images</a>
+            <div class="px-4 py-3"><div class="relative border-y-1.5 h-3.5 w-5 border-light-gray  after:absolute after:border-light-gray after:border-solid after:border-b-1.5 after:top-0.88 after:left-0 after:w-5"></div></div>
+            <a href="#" class="text-0.5sm text-active-menu-link border-active-menu-link hover:underline border-b-2 border-solid py-3 font-bold">ALL</a>
+            <a href="#" class="text-0.5sm text-menu-link hover:underline pl-4.5 pr-2">Images</a>
         </div>
         <div class="flex items-center">
-            <a href="#" class="hidden md:block text-[13px] text-menu-link hover:underline">Gmail</a>
-            <a href="#" class="hidden md:block text-[13px] text-menu-link hover:underline pl-[15px] pr-2">Images</a>
+            <a href="#" class="hidden md:block text-0.5sm text-menu-link hover:underline">Gmail</a>
+            <a href="#" class="hidden md:block text-0.5sm text-menu-link hover:underline pl-4.5 pr-2">Images</a>
             <div class="mx-1"><button class="p-2 rounded-full hover:bg-hover"><img src="./assets/menu.svg"
                         alt="menu icon"></button></div>
             <div class="p-1"><img src="./assets/avatar.jpg" class="h-10 w-10 rounded-full p-1 hover:bg-hover"
@@ -34,51 +29,51 @@
     </header>
     <main class="flex-1">
         <div class="flex justify-center mt-9 mb-4 md:my-0">
-            <img src="./assets/logo.png" class="w-40 h-14 md:h-[92px] md:w-[272px]" alt="logo">
+            <img src="./assets/logo.png" class="w-40 h-14 md:h-24.5 md:w-64.5" alt="logo">
         </div>
         <form class="p-5">
 
-            <div class=" relative max-w-[582px] mx-auto">
+            <div class=" relative max-w-36 mx-auto">
                 <input type="text"
-                    class="rounded-3xl pl-12 border-[#dfe1e5] border-[1px] border-solid h-11 w-full hover:shadow-input-shadow pt-[6px] outline-none">
-                <img src="./assets/search.svg" class="absolute left-0 pl-4 top-[11px]" alt="search">
-                <img src="./assets/microphone.svg" class="absolute right-0 pr-4 top-[10px]" alt="microphone">
+                    class="rounded-3xl pl-12 border-input-border border border-solid h-11 w-full hover:shadow-input-shadow pt-1.5 outline-none">
+                <img src="./assets/search.svg" class="absolute left-0 pl-4 top-2.7" alt="search">
+                <img src="./assets/microphone.svg" class="absolute right-0 pr-4 top-2.5" alt="microphone">
             </div>
-            <div class="flex pt-[18px] mx-auto w-fit">
+            <div class="hidden xm:flex pt-18 mx-auto w-fit">
                 <button
-                    class="bg-[#f8f9fa] my-[11px] mx-1 px-4 h-9 text-sm rounded-[4px] border-solid border-[1px] border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-sm text-[#202124]">Google
+                    class="bg-btn-bg my-2.7 mx-1 px-4 h-9 text-sm rounded border-solid border border-btnbg-btn-bg hover:border-dark-gray hover:shadow-sm text-btn-text">Google
                     Search</button>
                 <button
-                    class="bg-[#f8f9fa] my-[11px] mx-1 px-4 h-9 text-sm rounded-[4px] border-solid border-[1px] border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-sm text-[#202124]">I'm
+                    class="bg-btn-bg my-2.7 mx-1 px-4 h-9 text-sm rounded border-solid border border-btnbg-btn-bg hover:border-dark-gray hover:shadow-sm text-btn-text">I'm
                     Feeling Lucky</button>
             </div>
         </form>
-        <p class="text-[#4d5156] text-sm mx-auto w-fit px-5">Google offered in: <a
-                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Français</a> <a
-                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Kiswahili</a> <a
-                class="text-[#1a0dab] px-[3px] hover:underline" href="#">Ikinyarwanda</a></p>
+        <p class="text-text-light-gray text-sm mx-auto w-fit px-5">Google offered in: <a
+                class="text-link-blue px-1.5 hover:underline" href="#">Français</a> <a
+                class="text-link-blue px-1.5 hover:underline" href="#">Kiswahili</a> <a
+                class="text-link-blue px-1.5 hover:underline" href="#">Ikinyarwanda</a></p>
     </main>
-    <footer class="bg-[#f2f2f2]">
-        <div class="py-[15px] px-[30px] border-b-[1px] border-solid border-[#dadce0]">
-            <p class="text-[15px] text-[#70757a]">Rwanda</p>
+    <footer class="bg-footer-bg">
+        <div class="py-4.5 px-7.5 border-b border-solid border-dark-gray">
+            <p class="text-15 text-light-gray">Rwanda</p>
         </div>
         <div class="flex justify-evenly xl:justify-between flex-wrap px-5">
             <div class="flex md:hidden">
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Dark theme: off</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Dark theme: off</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Settings</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Terms</a>
             </div>
             <div class="hidden md:flex">
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">About</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Advertising</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Business</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">How Search works</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">About</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Advertising</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Business</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">How Search works</a>
             </div>
             <div class="flex">
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Privacy</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Terms</a>
-                <a href="#" class="p-[15px] text-[#70757a] text-sm hover:underline">Settings</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Terms</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Settings</a>
             </div>
         </div>
 
