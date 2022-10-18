@@ -7,10 +7,11 @@ module.exports = {
         "arial": "arial"
       },
       backgroundColor: {
-        hover: "rgba(60,64,67,.08)"
+        hover: "rgba(60,64,67,.08)",
       },
       boxShadow: {
-        "input-shadow": "0 1px 6px rgb(32 33 36 / 28%)"
+        "input-shadow": "0 1px 6px rgb(32 33 36 / 28%)",
+        "btn-hover": "0 1px 1px rgb(0 0 0 / 10%)"
       },
       colors: {
         "menu-link": "rgba(0,0,0,.87)",
