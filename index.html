@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body class="font-arial flex flex-col min-h-full h-full">
+    <header class="flex justify-between md:justify-end items-center h-12 p-2">
+        <div class="pl-2 md:hidden flex items-center">
+            <div class="px-4 py-3"><div class="relative border-y-1.5 h-3.5 w-5 border-light-gray  after:absolute after:border-light-gray after:border-solid after:border-b-1.5 after:top-0.88 after:left-0 after:w-5"></div></div>
+            <a href="#" class="text-0.5sm text-active-menu-link border-active-menu-link hover:underline border-b-2 border-solid py-3 font-bold">ALL</a>
+            <a href="#" class="text-0.5sm text-menu-link hover:underline pl-4.5 pr-2">Images</a>
+        </div>
+        <div class="flex items-center">
+            <a href="#" class="hidden md:block text-0.5sm text-menu-link hover:underline">Gmail</a>
+            <a href="#" class="hidden md:block text-0.5sm text-menu-link hover:underline pl-4.5 pr-2">Images</a>
+            <div class="mx-1"><button class="p-2 rounded-full hover:bg-hover"><img src="./assets/menu.svg"
+                        alt="menu icon"></button></div>
+            <div class="p-1"><img src="./assets/avatar.jpg" class="h-10 w-10 rounded-full p-1 hover:bg-hover"
+                    alt="avatar">
+            </div>
+        </div>
+
+    </header>
+    <main class="flex-1">
+        <div class="flex justify-center mt-9 mb-4 md:my-0">
+            <img src="./assets/logo.png" class="w-40 h-14 md:h-24.5 md:w-64.5" alt="logo">
+        </div>
+        <form class="p-5">
+            <div class=" relative max-w-36 mx-auto rounded-3xl border-input-border border border-solid h-11.5 w-full hover:shadow-input-shadow pr-2 pl-3.5 flex items-center cursor-pointer">
+                <img src="./assets/search.svg" class="h-5 min-w-5 pr-2.7" alt="search">
+                <input type="text"
+                    class="outline-none flex-1 min-w-0">
+                
+                <img src="./assets/microphone.svg" class="h-6 min-w-6 px-2" alt="microphone">
+                <img src="./assets/photo.svg" class="h-6 min-w-6 px-2" alt="microphone">
+            </div>
+            <div class="hidden sm:flex pt-18 mx-auto w-fit">
+                <button
+                    class="bg-btn-bg my-2.7 mx-1 px-4 h-9 text-sm rounded border-solid border border-btn-bg hover:border-dark-gray hover:shadow-btn-hover text-btn-text">Google
+                    Search</button>
+                <button
+                    class="bg-btn-bg my-2.7 mx-1 px-4 h-9 text-sm rounded border-solid border border-btn-bg hover:border-dark-gray hover:shadow-btn-hover text-btn-text">I'm
+                    Feeling Lucky</button>
+            </div>
+        </form>
+        <div class="text-text-light-gray text-sm mx-auto w-fit px-5 flex flex-wrap gap-1.5"><p>Google offered in:</p> <a
+                class="text-link-blue hover:underline" href="#">Français</a> <a
+                class="text-link-blue hover:underline" href="#">Kiswahili</a> <a
+                class="text-link-blue hover:underline" href="#">Ikinyarwanda</a></div>
+    </main>
+    <footer class="bg-footer-bg">
+        <div class="py-4.5 px-7.5 border-b border-solid border-dark-gray">
+            <p class="text-15 text-light-gray">Rwanda</p>
+        </div>
+        <div class="flex justify-evenly xl:justify-between flex-wrap px-5">
+            <div class="flex md:hidden">
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Dark theme: off</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Settings</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Terms</a>
+            </div>
+            <div class="hidden md:flex">
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">About</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Advertising</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Business</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">How Search works</a>
+            </div>
+            <div class="flex">
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Privacy</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Terms</a>
+                <a href="#" class="p-4.5 text-light-gray text-sm hover:underline">Settings</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: "arial";
+    src: url("./font/arial/ARIAL.TTF");
+}
+@tailwind utilities;
